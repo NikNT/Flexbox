@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background: url('./gradient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    border: 3px solid black;
+    max-width: 1000px;
+    height: 50px;  
+    margin: 0 auto;
+    background: black; 
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+    .container ul li{
+        list-style-type: none;
+    }
+
+    .container ul li a{
+        text-decoration: none;
+        color: white; 
+    }
+
+    .list-items a:hover{
+        color: lightgreen;  
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+section{
+    margin-top: 50px;
+}
+
+    h1{
+        color: white; 
+        text-align: center;
+        font-size: 300%; 
+    }
+
+    h1:hover{
+        color: mistyrose; 
+        transition: all 0.5s ease-in-out; 
+    }
+
+
+/*Flexbox Properties Below*/
+
+.list-items{
+    display: flex;
+    justify-content: space-around;
+} 
+
+
+.flex-item{
+    flex: 3; 
+}
+
+.social{
+    flex: 1; 
+}
+
+/* Media Queries for Breakpoint */
+
+@media all and (max-width: 1000px){
+
+    .container{
+        height: 200px;
+        background-size: cover; 
+        max-width: 600px;
+        border: 3px solid white;
+        text-align: center;
+    }
+
+
+    .list-items{
+        flex-wrap: wrap;
+    }
+
+    .list-items li{
+        flex: 1 1 50%;
+    }
+
+    .list-items .social{
+        flex: 1 1 25%; 
+    }
+
+    .list-items .flex-item{
+        margin-top: 15px;  
+    }
+
+    .social{
+        padding-top: 15px;
+    }
+}
+
+@media all and (max-width: 600px){
+    body{
+        background: black; 
+        font-size: 70%; 
+    }
+
+    .container{
+        height: 250px;
+        background: url('./gradient.png');
+        background-size: cover; 
+        width: 380px;
+        border: 3px solid white;
+        text-align: center;
+    }
+
+    /* .list-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-right: 50px;
+    }  */
+
+    .list-items{
+        align-items: center;
+        margin-right: 50px;
+    }
+
+    .list-items li{
+        flex-basis: 100%;
+    }
+
+
+}
+
