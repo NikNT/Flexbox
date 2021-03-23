@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Flexbox Reordering</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <header class="top box">
+            <h1><a href="#">Flexbox Mobile!</a></h1>  
+        </header>
+
+        <div class="box" id ="hidden-menu">
+            <h1 id="hidden-text"> 
+                <a href="#"><i class="fa fa-bars"></i> Menu</a>
+            </h1>
+           </div>
+
+        <nav class="top-nav box" id="mobile-nav">
+
+            <ul>
+                <li> <a href="#"> Home </a> </li>
+                <li> <a href="#"> Products </a> </li>
+                <li> <a href="#"> Services </a> </li>
+                <li> <a href="#"> Contact </a> </li>
+                <li> <a href="#"> About </a> </li>
+                <li> <a href="#"> Login </a> </li>
+                <li class="social"> <a href="https://twitter.com/"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="social"> <a href="https://facebook.com"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a> </li>
+                <li class="social"> <a href="https://github.com"> <i class="fa fa-github" aria-hidden="true"></i> </a> </li>
+                <li class="social"> <a href="https://instagram.com"> <i class="fa fa-instagram" aria-hidden="true"></i> </a></li> 
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <img src="./mountains.jpg" alt="">
+        </section>
+
+        <section class="content box">
+            <p> Flexbox provides great and useful set of features</p>
+            <p> Practice and Improve Flexbox!</p>
+        </section>
+
+        <section class="form box">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Your Name" name="name">
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email Address" name="email">
+    
+                <input type="button" value="Sign me up!">
+
+            </form>
+        </section>
+        
+        <footer class="bottom box">
+            <h3>&#169; Nik Tan</h3>
+        </footer>
+
+    </div>
+
+    <script src="./script.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+              $('#hidden-text').click(function(){
+              $('#mobile-nav').slideToggle(); 
+            });
+    }); 
+    </script> -->
+    
+</body>
+</html>

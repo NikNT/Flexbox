@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: url('./gradient.png'); 
+    background-size: cover;
+    min-height: 100vh;
+}
+
+ .wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+/* Top Section */ 
+
+.box{
+    height: auto;
+    width: 800px;
+    font-size: 80%;
+    background-color: black;
+    text-align: center;
+    margin: 10px 0px 10px 0; 
+    padding: 10px 0 20px 0;
+    border-radius: 5px;
+}
+
+.wrapper .top a{
+    text-decoration: none;
+    color: whitesmoke; 
+}
+
+/* Navigation Bar */ 
+
+#hidden-menu{
+    display: none;
+}
+
+#hidden-menu h1 a{
+    color: white; 
+    text-decoration: none;
+}
+
+.wrapper nav ul {
+    list-style-type: none; 
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper .top-nav ul li{
+    padding-top: 5px;
+}
+
+.wrapper .top-nav ul li .social{
+    flex: 1; 
+}
+
+.wrapper .top-nav ul li a{
+    text-decoration: none;
+    color: whitesmoke; 
+    font-size: 120%;
+    flex: 3; 
+}
+
+.wrapper .top-nav ul li a:hover{
+    color: lightgreen; 
+    transition: all 0.5s ease-in-out;
+}
+
+/* Hero Section - Image */ 
+
+img{
+    width: 780px;
+    border: 10px solid white;
+    border-radius: 2px;
+}
+
+/* Content Section */ 
+
+.content{
+    color: whitesmoke;
+    padding-top: 15px;  
+}
+
+/*Form Section*/ 
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 5px;
+}
+
+input{
+    border-radius: 2px;
+}
+
+input[type=text], input[type=email]{
+    padding: 5px 0 5px 0; 
+    margin-left: -22px;
+    width: 20%;
+
+}
+
+input[type=button]{
+    margin-left: 10px;
+    padding: 5px 2px 5px 2px;
+    color: white; 
+    background-color: #5cb85c; 
+}
+
+::placeholder{
+    text-align: center;
+}
+
+/* Footer Section */
+
+footer h3{
+    color: white; 
+    font-size: 120%; 
+    padding-top: 10px;
+}
+
+/* Responsive Media Queries */ 
+
+@media all and (max-width: 768px){
+    body{
+        background: yellowgreen;
+    }
+
+    .top-nav ul{
+        flex-wrap: wrap;
+    }
+
+    .top-nav ul li{
+        flex: 1 1 50%; 
+    }
+
+    .top-nav ul li.social{
+        flex: 1 1 25%; 
+        padding-top: 20px;
+    }
+
+}
+
+@media all and (max-width: 500px){
+    body{
+        background: lightsalmon; 
+    }
+
+    .top{
+        order: 2; 
+    }
+
+    #hidden-menu{
+        display: block;
+    }
+
+    .top-nav{
+        order: 1;
+        display: none; 
+    }
+
+    .top-nav ul{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .top-nav ul li{
+        margin: 5px 0 5px 0; 
+    }
+
+    .top-nav ul li.social{
+        margin: -3px 0 -3px 0; 
+    }
+
+    .hero{
+        order: 5; 
+    }
+
+    .content{
+        order: 3; 
+    }
+
+    .form{
+        order: 4; 
+    }
+
+    .bottom{
+        order: 5; 
+    }
+
+    img{
+        width: 420px;
+    }
+}
