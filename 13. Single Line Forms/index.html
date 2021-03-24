@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Single Line Form!</title>
+</head>
+<body>
+
+    <video autoplay muted loop id="video">
+        <source src="./sunset.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <form class="wrapper">
+            <div class="inside">
+            <input type="text" name="main" id="main" placeholder="Where do you want to go?" class="flex-item">
+            <input type="text" name="from" id="from" placeholder="From" class="flex-item">
+            <input type="date" name="date" id="date" class="flex-item">
+            <input type="text" name="to" id="to" placeholder="To" class="flex-item">
+            <input type="date" name="date" id="date" class="flex-item">
+            <select class="flex-item" style=" height:44px;">
+                <option value="One" selected>1 Guest</option>
+                <option value="Two">2 Guests</option>
+                <option value="Three">3 Guests</option>
+                <option value="Four">4 Guests</option>
+                <option value="Five">5 Guests</option>
+                <option value="Six">6 Guests</option>
+            </select>
+            <input type="button" value="Search" id="search">
+           </div>
+        </form>
+    </div>  
+</body>
+</html>
